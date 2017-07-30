@@ -26,7 +26,7 @@ SECRET_KEY = '91823%pya!%tsbn68!1w7qa4bv-n)dx245fx1-(_8@4k*e5t7r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['satpuramess.herokuapp.com',]
 
 
 # Application definition
