@@ -16,8 +16,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from django.views.generic.base import TemplateView
+import main.views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', TemplateView.as_view(template_name='mess/index.html')),
+    # url(r'^$', TemplateView.as_view(template_name='mess/index.html')),
+    url(r'^$', main.views.index,name='index'),
+    # url(r'^queries$', main.views.queries,name='queries'),
+    # url(r'^health$', main.views.health,name='health'),
 ]
