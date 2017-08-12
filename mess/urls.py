@@ -22,6 +22,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # url(r'^$', TemplateView.as_view(template_name='mess/index.html')),
     url(r'^$', main.views.index,name='index'),
+    url(r'^feedback/$',main.views.feedback,name='feedback'),
+    url(r'^birthday/$',main.views.birthday,name='birthday'),
+    url(r'^items/$',main.views.items,name='items'),
     # url(r'^queries$', main.views.queries,name='queries'),
     # url(r'^health$', main.views.health,name='health'),
 ]

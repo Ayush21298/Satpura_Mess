@@ -9,3 +9,12 @@ def queries(request):
 
 def health(request):
     return render(request,'mess/health.html',{});
+
+def feedback(request):
+    return render(request,'main/feedback_form.html',{});
+
+def birthday(request):
+    return render(request,'main/birthday.html',{});
+
+def items(request):
+    return render(request,'main/items.html',{});
